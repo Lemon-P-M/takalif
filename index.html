@@ -3,67 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>برنامه هفتگی</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        input, textarea {
-            width: 100%;
-            box-sizing: border-box;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>مدیریت وظایف دروس</title>
 </head>
 <body>
-    <h1>برنامه هفتگی</h1>
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>شنبه</th>
-                <th>یک‌شنبه</th>
-                <th>دو‌شنبه</th>
-                <th>سه‌شنبه</th>
-                <th>چهار‌شنبه</th>
-                <th>پنج‌شنبه</th>
-                <th>جمعه</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Rows for each lesson -->
-            <tr>
-                <td><input type="text" placeholder="نام درس"></td>
-                <td><textarea placeholder="توضیحات"></textarea></td>
-                <td><textarea placeholder="توضیحات"></textarea></td>
-                <td><textarea placeholder="توضیحات"></textarea></td>
-                <td><textarea placeholder="توضیحات"></textarea></td>
-                <td><textarea placeholder="توضیحات"></textarea></td>
-                <td><textarea placeholder="توضیحات"></textarea></td>
-                <td><textarea placeholder="توضیحات"></textarea></td>
-            </tr>
-            <!-- Add more rows as needed -->
-        </tbody>
-    </table>
+    <div class="task-manager">
+        <h1>مدیریت وظایف دروس</h1>
+        <div id="tasks-container"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
