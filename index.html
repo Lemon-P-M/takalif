@@ -1,14 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
+    <style>
+        body {
+            background-color: purple; /* تغییر پس زمینه کل صفحه به رنگ قرمز */
+            margin: 10; /* حذف حاشیه‌ها و حاشیه‌های بندی‌ها از body */
+        }
+
+        #greenBox {
+            width: 689px; /* عرض مربع */
+            height: 374px; /* ارتفاع مربع */
+            background-color: green; /* پس زمینه سبز */
+            margin: auto; /* مرکز چین کردن */
+            overflow: hidden; /* جلوگیری از خروج محتوا از مربع */
+        }
+
+        #centeredContent {
+            width: 100%; /* پر کردن عرض مربع */
+            height: 100%; /* پر کردن ارتفاع مربع */
+        }
+
+        iframe {
+            width: 100%; /* پر کردن عرض ایفریم */
+            height: 100%; /* پر کردن ارتفاع ایفریم */
+            border: none; /* حذف حاشیه‌ها و حاشیه‌های بندی‌ها */
+        }
+    </style>
 </head>
 <body>
-    <div id="centeredContent">
-        <iframe src="https://onedrive.live.com/embed?resid=5DA69E8955C20631!194&authkey=!AADZFwCYq2-95cI&em=2&wdAllowInteractivity=False&ActiveCell=%27Sheet1%27!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False&wdInConfigurator=False&wdInConfigurator=False" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+    <div id="greenBox">
+        <div id="centeredContent">
+            <iframe src="https://onedrive.live.com/embed?resid=5DA69E8955C20631!194&amp;authkey=!AADZFwCYq2-95cI&amp;em=2&amp;wdAllowInteractivity=False&amp;ActiveCell=%27Sheet1%27!A1&amp;wdHideGridlines=True&amp;wdHideHeaders=True&amp;wdDownloadButton=False&amp;wdInConfigurator=False&amp;wdInConfigurator=False" frameborder="0" scrolling="no"></iframe>
+        </div>
     </div>
-</body>
-</html>
+
+
+</body></html>
