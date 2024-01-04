@@ -12,7 +12,7 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background-color: #f0f0f0; /* انتخاب رنگ بکگراند */
+      background-color: #ffA200; /* انتخاب رنگ بکگراند */
     }
 
     #container {
@@ -21,13 +21,21 @@
       background-color: #fff; /* انتخاب رنگ پس زمینه مستطیل */
       border-radius: 15px; /* گرد کردن لبه‌ها */
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* افزودن سایه */
+      overflow: hidden; /* جلوگیری از اشباع محتوا به خارج از مستطیل */
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      object-fit: cover; /* فیت کردن محتوا به درون مستطیل */
     }
   </style>
 </head>
 <body>
 
   <div id="container">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=5DA69E8955C20631%21194&authkey=%21AADZFwCYq2-95cI&em=2&wdAllowInteractivity=False&ActiveCell='Sheet1'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+    <iframe frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=5DA69E8955C20631%21194&authkey=%21AADZFwCYq2-95cI&em=2&wdAllowInteractivity=False&ActiveCell='Sheet1'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
   </div>
 
 </body>
