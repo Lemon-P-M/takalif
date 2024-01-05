@@ -2,11 +2,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Calibri:wght@400;700&amp;display=swap">
     <title>تکالیف و آزمون های چمران(بتا)</title>
     <style>
         body {
             background-color:#3368ff; /* تغییر پس زمینه کل صفحه به رنگ قرمز */
+            font-family: 'Calibri', sans-serif; /* استفاده از فونت Calibri */
             margin: 0; /* حذف حاشیه‌ها و حاشیه‌های بندی‌ها از body */
+        }
+
+        .center-container {
+          max-width: 800px; /* تنظیم عرض مطلوب برای جدول */
+          width: 100%;
+          overflow-x: auto; /* در صورت نیاز به اسکرول افقی */
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px; /* فاصله بالای جدول */
+        }
+
+        th, td {
+          padding: 10px;
+          border: 0px solid #ffffff;
+          text-align: center;
+        }
+
+        th {
+          background-color: #f2f2f2; /* رنگ پس زمینه هدر */
+        }
+
+        tr:nth-child(even) {
+          background-color: #f9f9f9; /* رنگ پس زمینه سطرهای زوج */
         }
 
         #greenBox {
@@ -39,6 +67,26 @@
             <iframe src="https://onedrive.live.com/embed?resid=5DA69E8955C20631!194&amp;authkey=!AADZFwCYq2-95cI&amp;em=2&amp;wdAllowInteractivity=False&amp;ActiveCell=%27Sheet1%27!A1&amp;wdHideGridlines=True&amp;wdHideHeaders=True&amp;wdDownloadButton=False&amp;wdInConfigurator=False&amp;wdInConfigurator=False" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
+    
+    <div>
+	<table class="table table-hover" cellspacing="0" id="ContentPlaceHolder1_grdAQI" style="border-collapse:collapse;">
+		<tbody><tr style="color:#000000;background-color:#ffffff;">
+			<th scope="col">|</th><th class="header-center" scope="col">توضیحات</th><th class="header-center" scope="col">|</th><th class="header-center" scope="col">تعداد روز مانده</th>
+		<th class="header-center">رنگ</th></tr><tr style="color:#000000;background-color:#00b050;">
+			<td>|</td><td align="center">هنوز بیشتر از 5 روز مونده راحت به کارهات برس</td><td align="center">|</td><td align="center">بیشتر از 5 روز</td>
+		<td align="center">سبز</td></tr><tr style="color:#000000;background-color:#FFD700;">
+			<td>|</td><td align="center">اگر سخته برو حلش کن</td><td align="center">|</td><td align="center">٤ یا 5 روز </td><td align="center">زرد</td>
+		</tr><tr style="color:#000000;background-color:#FF8C00;">
+			<td>|</td><td align="center">اگر فردا کار داری حلش کن همین امروز</td><td align="center">|</td><td align="center">٣ روز</td><td align="center">نارنجی</td>
+		</tr><tr style="color:#FFFFFF;background-color:#FF0000;">
+			<td>|</td><td align="center">دیگه خودت میدونی</td><td align="center">|</td><td align="center">٢ روز</td><td align="center">قرمز</td>
+		</tr><tr style="color:#FFFFFF;background-color:#c00000;">
+			<td>|</td><td align="center">هنوز وقت هست تو میتونی</td><td align="center">|</td><td align="center">١ روز</td><td align="center">زرشکی</td>
+		</tr><tr style="color:#FFFFFF;background-color:#7030a0;">
+			<td>|</td><td align="center">انشالله تو مدرسه بتونی بنویسی</td><td align="center">|</td><td align="center">وقت تمام شده</td><td align="center">ایشاال</td>
+		</tr>
+	</tbody></table>
+</div>
 
  
 
