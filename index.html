@@ -6,103 +6,152 @@
     <title>تکالیف و آزمون های چمران(بتا)</title>
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/Lemon-P-M/takalif/main/favicon.ico">
     <style>
-        body {
-            background-color:#3368ff; /* تغییر پس زمینه کل صفحه به رنگ قرمز */
-            font-family: 'Calibri', sans-serif; /* استفاده از فونت Calibri */
-            margin: 0; /* حذف حاشیه‌ها و حاشیه‌های بندی‌ها از body */
-        }
+      @font-face {
+        font-family: font ;
+        src: url(font.ttf);
+      }
+      body {
+        font-family: font;
+        background-color: #3368ff; /* تغییر پس زمینه کل صفحه به رنگ قرمز */
+        font-family: "Calibri", sans-serif; /* استفاده از فونت Calibri */
+        margin: 0; /* حذف حاشیه‌ها و حاشیه‌های بندی‌ها از body */
+      }
 
-        .center-container {
-          max-width: 500px; /* تنظیم عرض مطلوب برای جدول */
-          width: 100%;
-          overflow-x: auto; /* در صورت نیاز به اسکرول افقی */
-        }
+      .center-container {
+        max-width: 500px; /*تنظیم عرض مطلوب برای جدول*/
+        width: 100%;
+        overflow-x: auto; /* در صورت نیاز به اسکرول افقی */
+      }
 
-        table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-top: 0px; /* فاصله بالای جدول */
-        }
+      table {
+        font-family: font;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0px; /* فاصله بالای جدول */
+      }
 
-        th, td {
-          padding: 10px;
-          border: 0px solid #ffffff;
-          text-align: center;
-        }
+      th,
+      td {
+        padding: 10px;
+        border: 0px solid #ffffff;
+        text-align: center;
+      }
 
-        th {
-          background-color: #f2f2f2; /* رنگ پس زمینه هدر */
-        }
+      th {
+        background-color: #f2f2f2; /* رنگ پس زمینه هدر */
+      }
 
-        tr:nth-child(even) {
-          background-color: #f9f9f9; /* رنگ پس زمینه سطرهای زوج */
-        }
+      .hoverbig {
+        transition: 5s;
+      }
 
-        #greenBox {
-            width: 710px; /* عرض مربع */
-            height: 371px; /* ارتفاع مربع */
-            background-color:orange; /* پس زمینه */
-            margin-top: 20px;
-            margin-right:auto;
-	    margin-left:auto;/* مرکز چین کردن */
-            overflow: hidden; /* جلوگیری از خروج محتوا از مربع */
-            border-radius: 7px;
-	    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
+      .hoverbig:hover {
+        height: 100px;
+        transition: 5s;
+      }
 
-	#orangeBox {
-            width: 550px; /* عرض مربع */
-            height: 350px; /* ارتفاع مربع */
-            background-color:#3368ff; /* پس زمینه */
-            margin-top: 20px;
-            margin-right:auto;
-	    margin-left:auto;
-            overflow: hidden; /* جلوگیری از خروج محتوا از مربع */
-            border-radius: 0px;
-        }
+      tr:nth-child(even) {
+        font-family: font;
+        background-color: #f9f9f9; /* رنگ پس زمینه سطرهای زوج */
+      }
 
-        #centeredContent {
-            width: 100%; /* پر کردن عرض مربع */
-            height: 100%; /* پر کردن ارتفاع مربع */
-        }
+      #greenBox {
+        width: 95%; /* عرض مربع */
+        height: 80vh; /* ارتفاع مربع */
+        background-color: orange; /* پس زمینه سبز */
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto; /* مرکز چین کردن */
+        border-radius: 7px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
 
-        iframe {
-            width: 100%; /* پر کردن عرض ایفریم */
-            height: 100%; /* پر کردن ارتفاع ایفریم */
-            border: none; /* حذف حاشیه‌ها و حاشیه‌های بندی‌ها */
-        }
+      #orangeBox {
+        width: 94%; /* عرض مربع */
+        min-height: 30vh; /* ارتفاع مربع */
+        background-color: #3368ff; /* پس زمینه سبز */
+        margin: 20px auto;
+        overflow: hidden; /* جلوگیری از خروج محتوا از مربع */
+        border-radius: 5px;
+      }
+
+      #centeredContent {
+        width: 100%; /* پر کردن عرض مربع */
+        height: 100%; /* پر کردن ارتفاع مربع */
+        display: flex;
+        align-items: center;
+      }
+
+      iframe {
+        width: 95%; /* پر کردن عرض ایفریم */
+        height: 95%; /* پر کردن ارتفاع ایفریم */
+        border-radius: 5px;
+        margin: 0 auto;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="greenBox">
-        <div id="centeredContent">
-            <iframe src="https://onedrive.live.com/embed?resid=5DA69E8955C20631!194&amp;authkey=!AADZFwCYq2-95cI&amp;em=2&amp;wdAllowInteractivity=False&amp;ActiveCell=%27Sheet1%27!A1&amp;wdHideGridlines=True&amp;wdHideHeaders=True&amp;wdDownloadButton=False&amp;wdInConfigurator=False&amp;wdInConfigurator=False" frameborder="0" scrolling="no"></iframe>
-        </div>
+      <div id="centeredContent">
+        <iframe src="https://onedrive.live.com/embed?resid=5DA69E8955C20631!194&amp;authkey=!AADZFwCYq2-95cI&amp;em=2&amp;wdAllowInteractivity=False&amp;ActiveCell=%27Sheet1%27!A1&amp;wdHideGridlines=True&amp;wdHideHeaders=True&amp;wdDownloadButton=False&amp;wdInConfigurator=False&amp;wdInConfigurator=False" frameborder="0" scrolling="no"></iframe>
+      </div>
     </div>
-    
+
     <div id="orangeBox">
-    <table class="table table-hover" cellspacing="0" id="ContentPlaceHolder1_grdAQI" style="border-collapse:collapse;">
-		<tbody><tr style="color:#000000;background-color:#ffffff;">
-			<th scope="col">|</th><th class="header-center" scope="col">توضیحات</th><th class="header-center" scope="col">|</th><th class="header-center" scope="col">تعداد روز مانده</th>
-		<th class="header-center">رنگ</th></tr><tr style="color:#000000;background-color:#00b050;">
-			<td>|</td><td align="center">هنوز بیشتر از 5 روز مونده راحت به کارهات برس</td><td align="center">|</td><td align="center">بیشتر از 5 روز</td>
-		<td align="center">سبز</td></tr><tr style="color:#000000;background-color:#FFD700;">
-			<td>|</td><td align="center">اگر سخته برو حلش کن</td><td align="center">|</td><td align="center">٤ یا 5 روز </td><td align="center">زرد</td>
-		</tr><tr style="color:#000000;background-color:#FF8C00;">
-			<td>|</td><td align="center">اگر فردا کار داری حلش کن همین امروز</td><td align="center">|</td><td align="center">٣ روز</td><td align="center">نارنجی</td>
-		</tr><tr style="color:#FFFFFF;background-color:#FF0000;">
-			<td>|</td><td align="center">دیگه خودت میدونی</td><td align="center">|</td><td align="center">٢ روز</td><td align="center">قرمز</td>
-		</tr><tr style="color:#FFFFFF;background-color:#c00000;">
-			<td>|</td><td align="center">هنوز وقت هست تو میتونی</td><td align="center">|</td><td align="center">١ روز</td><td align="center">زرشکی</td>
-		</tr><tr style="color:#FFFFFF;background-color:#7030a0;">
-			<td>|</td><td align="center">انشالله تو مدرسه بتونی بنویسی</td><td align="center">|</td><td align="center">وقت تمام شده</td><td align="center">بنفش</td>
-		</tr>
-	</tbody></table>
-  </div>
-
- 
-
-
-
+      <table class="table table-hover" cellspacing="0" id="ContentPlaceHolder1_grdAQI" style="border-collapse: collapse">
+        <tbody>
+          <tr style="color: #000000; background-color: #ffffff">
+            <th scope="col">|</th>
+            <th class="header-center" scope="col">توضیحات</th>
+            <th class="header-center" scope="col">|</th>
+            <th class="header-center" scope="col">تعداد روز مانده</th>
+            <th class="header-center">رنگ</th>
+          </tr>
+          <tr style="color: #000000; background-color: #00b050" class="hoverbig">
+            <td>|</td>
+            <td align="center">هنوز بیشتر از 5 روز مونده راحت به کارهات برس</td>
+            <td align="center">|</td>
+            <td align="center">بیشتر از 5 روز</td>
+            <td align="center">سبز</td>
+          </tr>
+          <tr style="color: #000000; background-color: #ffd700" class="hoverbig">
+            <td>|</td>
+            <td align="center">اگر سخته برو حلش کن</td>
+            <td align="center">|</td>
+            <td align="center">٤ یا 5 روز</td>
+            <td align="center">زرد</td>
+          </tr>
+          <tr style="color: #000000; background-color: #ff8c00" class="hoverbig">
+            <td>|</td>
+            <td align="center">اگر فردا کار داری حلش کن همین امروز</td>
+            <td align="center">|</td>
+            <td align="center">٣ روز</td>
+            <td align="center">نارنجی</td>
+          </tr>
+          <tr style="color: #ffffff; background-color: #ff0000" class="hoverbig">
+            <td>|</td>
+            <td align="center">دیگه خودت میدونی</td>
+            <td align="center">|</td>
+            <td align="center">٢ روز</td>
+            <td align="center">قرمز</td>
+          </tr>
+          <tr style="color: #ffffff; background-color: #c00000" class="hoverbig">
+            <td>|</td>
+            <td align="center">هنوز وقت هست تو میتونی</td>
+            <td align="center">|</td>
+            <td align="center">١ روز</td>
+            <td align="center">زرشکی</td>
+          </tr>
+          <tr style="color: #ffffff; background-color: #7030a0" class="hoverbig">
+            <td>|</td>
+            <td align="center">انشالله تو مدرسه بتونی بنویسی</td>
+            <td align="center">|</td>
+            <td align="center">وقت تمام شده</td>
+            <td align="center">بنفش</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
 
 </body></html>
